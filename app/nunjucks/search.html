@@ -1,0 +1,139 @@
+{% set title = 'Строймастер' %} {% extends 'layouts/_main.html' %} {% block
+content %}
+<!-- =========================== search ============================= -->
+<div class="search sec">
+  <div class="breadcrumbs">
+    <!-- Breadcrumb NavXT 6.5.0 -->
+    <span property="itemListElement" typeof="ListItem"
+      ><a
+        property="item"
+        typeof="WebPage"
+        title="Перейти к Альтиус."
+        href="https://altius-rf.ru"
+        class="home"
+        ><span property="name">Главная</span></a
+      ><meta property="position" content="1" /></span
+    ><span> » </span
+    ><span property="itemListElement" typeof="ListItem"
+      ><span property="name" class="post post-objects current-item">Поиск</span
+      ><meta
+        property="url"
+        content="https://altius-rf.ru/objects/kapitalnyj-remont-kazanskoj-tjec-1" /><meta
+        property="position"
+        content="3"
+    /></span>
+  </div>
+  <!-- <h1 class="sec__title">Поиск</h1> -->
+  <form class="search__form" action="">
+    <input type="text" placeholder="Введите ваш запрос" />
+    <button class="btn">Поиск</button>
+  </form>
+</div>
+<!-- =========================== END search ============================= -->
+<!-- ===========================  search__result ============================= -->
+<div class="search__result sec">
+  <a href="" class="search__result__title">Заголовок результата поиска</a>
+  <div class="search__result__desc">
+    Это требования к техническому оборудованию, которое используется на опасных
+    предприятиях. Подтверждает высокое качество оборудования и его безопасность.
+  </div>
+</div>
+<!-- =========================== END search__result ============================= -->
+<!-- ===========================  search__result ============================= -->
+<div class="search__result sec">
+  <a href="" class="search__result__title">Заголовок результата поиска</a>
+  <div class="search__result__desc">
+    Это требования к техническому оборудованию, которое используется на опасных
+    предприятиях. Подтверждает высокое качество оборудования и его безопасность.
+  </div>
+</div>
+<!-- =========================== END search__result ============================= -->
+<!-- ===========================  search__result ============================= -->
+<div class="search__result sec">
+  <a href="" class="search__result__title">Заголовок результата поиска</a>
+  <div class="search__result__desc">
+    Это требования к техническому оборудованию, которое используется на опасных
+    предприятиях. Подтверждает высокое качество оборудования и его безопасность.
+  </div>
+</div>
+<!-- =========================== END search__result ============================= -->
+
+<!-- =========================== contacts ============================= -->
+<div class="contacts">
+  <div class="contacts__content__text">
+    <div class="sec__title">Контакты</div>
+    <ul class="contacts__list">
+      <!-- contacts__list__item -->
+      <li class="contacts__list__item">
+        <img
+          src="img/head__phone.svg"
+          alt=""
+          class="contacts__list__item__icon"
+        />
+        <span>+7 (495) 786-0017</span>
+      </li>
+      <!--END contacts__list__item -->
+      <!-- contacts__list__item -->
+      <li class="contacts__list__item">
+        <img
+          src="img/head__loc.svg"
+          alt=""
+          class="contacts__list__item__icon"
+        />
+        <span>109377, г. Москва ул. Новокузьминская 1-я д. 19</span>
+      </li>
+      <!--END contacts__list__item -->
+      <!-- contacts__list__item -->
+      <li class="contacts__list__item">
+        <img
+          src="img/head__mail.svg"
+          alt=""
+          class="contacts__list__item__icon"
+        />
+        <span>stroimaster-kbu@mail.ru</span>
+      </li>
+      <!--END contacts__list__item -->
+    </ul>
+    <form action="" class="contacts__form">
+      <div class="inputgroup">
+        <input type="text" placeholder="+7 (999) 999-9999" />
+      </div>
+      <div class="inputgroup">
+        <button class="btn">Заказать звонок</button>
+      </div>
+    </form>
+    <div class="hero__text__politics">
+      Нажимая «Заказать звонок», я соглашаюсь с условиями
+      <a href="">Политики конфиденциальности</a>
+    </div>
+  </div>
+  <div class="contacts__content__map" id="contacts__map"></div>
+</div>
+<!-- =========================== END contacts ============================= -->
+
+<script
+  src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+  type="text/javascript"
+></script>
+<script>
+  //Яндекс Карта
+  ymaps.ready(init);
+  var myMapAll;
+
+  function init() {
+    myMapAll = new ymaps.Map("contacts__map", {
+      center: [55.714663, 37.790893],
+      zoom: 15,
+    });
+    var myPlacemark_1 = new ymaps.Placemark([55.714663, 37.790893], {
+      balloonContentHeader: "Название объекта",
+      balloonContentBody: "Описание объекта",
+      balloonContentFooter: "",
+      hintContent: "Кликните для более подробной информации",
+    });
+    myMapAll.geoObjects.add(myPlacemark_1);
+  }
+  //END Яндекс Карта
+</script>
+
+{% endblock %}

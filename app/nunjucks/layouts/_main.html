@@ -1,133 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>{{ title }}</title>
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="fonts/stylesheet.css">
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-	<!--============================= head__navbar ======================================-->
-	<div class="head__navbar">
-		<!-- ==========================head================================ -->
-		<div class="head">
-			<div class="container">
-				<!-- head__contact -->
-				<div class="head__contact">
-					<img src="img/head__loc.svg" alt="" class="head__contact__icon">
-					<a href="" class="head__contact__title">109377, г. Москва ул. Новокузьминская 1-я д. 19</a>
-				</div>
-				<!-- head__contact -->
-				<!-- head__contact -->
-				<div class="head__contact">
-					<img src="img/head__mail.svg" alt="" class="head__contact__icon">
-					<a href="mailto:stroimaster-kbu@mail.ru" class="head__contact__title">stroimaster-kbu@mail.ru</a>
-				</div>
-				<!-- head__contact -->
-				<!-- head__contact -->
-				<div class="head__contact phone">
-					<img src="img/head__phone.svg" alt="" class="head__contact__icon">
-					<a href="tel:+7 495 786 0017" class="head__contact__title">+7 (495) 786-0017</a>
-				</div>
-				<!-- head__contact -->
-				<button class="btn head__btn">Заказать обратный звонок</button>
-			</div>
-		</div>
-		<!-- ==========================END head================================ -->
-		<!-- ==========================navbar================================ -->
-		<div class="navbar">
-			<div class="container">
-				<a href="" class="navbar__logo">
-					<img src="img/logo.svg" alt="">
-				</a>
-				<ul class="navbar__links">
-					<li>
-						<a href="">Каталог услуг</a>
-					</li>
-					<li>
-						<a href="">О нас</a>
-					</li>
-					<li>
-						<a href="">Новости</a>
-					</li>
-					<li>
-						<a href="">Статьи</a>
-					</li>
-					<li>
-						<a href="">Контакты</a>
-					</li>
-				</ul>
-				<a href="/" class="navbar__search">
-					<img src="img/search.svg" alt="">
-				</a>
-			</div>
-		</div>
-		<!-- ==========================END navbar================================ -->
-	</div>
-	<!--=============================END head__navbar ======================================-->
-	{% block content %}
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!--============================= head__navbar ======================================-->
+    <div class="head__navbar">
+      <!-- ==========================head================================ -->
+      <div class="head">
+        <div class="container">
+          <!-- head__contact -->
+          <div class="head__contact">
+            <img src="img/head__loc.svg" alt="" class="head__contact__icon" />
+            <a href="" class="head__contact__title"
+              >109377, г. Москва ул. Новокузьминская 1-я д. 19</a
+            >
+          </div>
+          <!-- head__contact -->
+          <!-- head__contact -->
+          <div class="head__contact">
+            <img src="img/head__mail.svg" alt="" class="head__contact__icon" />
+            <a
+              href="mailto:stroimaster-kbu@mail.ru"
+              class="head__contact__title"
+              >stroimaster-kbu@mail.ru</a
+            >
+          </div>
+          <!-- head__contact -->
+          <!-- head__contact -->
+          <div class="head__contact phone">
+            <img src="img/head__phone.svg" alt="" class="head__contact__icon" />
+            <a href="tel:+7 495 786 0017" class="head__contact__title"
+              >+7 (495) 786-0017</a
+            >
+          </div>
+          <!-- head__contact -->
+          <button class="btn head__btn" data-modal-show="1">
+            Заказать обратный звонок
+          </button>
+        </div>
+      </div>
+      <!-- ==========================END head================================ -->
+      <!-- ==========================navbar================================ -->
+      <div class="navbar">
+        <div class="container">
+          <a href="/stroimaster/" class="navbar__logo">
+            <img src="img/logo.svg" alt="" />
+          </a>
+          <ul class="navbar__links">
+            <li>
+              <a href="/stroimaster/">Главная</a>
+            </li>
+            <li>
+              <a href="uslugi.html">Каталог услуг</a>
+            </li>
+            <li>
+              <a href="about__as.html">О нас</a>
+            </li>
+            <li>
+              <a href="news.html">Новости</a>
+            </li>
+            <!-- <li>
+              <a href="">Статьи</a>
+            </li> -->
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <a href="search.html" class="navbar__search">
+            <img src="img/search.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <!-- ==========================END navbar================================ -->
+    </div>
+    <!--=============================END head__navbar ======================================-->
+    <div class="main">
+      <div class="container">
+        <div class="main__content">
+          {% block content %} {% endblock %}
+        </div>
+      </div>
+    </div>
+    <!-- ===================================footer================================== -->
+    <div class="footer">
+      <div class="container">
+        <div class="footer__cols">
+          <div class="footer__col">
+            <a href="" class="footer__logo">
+              <img src="img/logo__white.svg" alt="" />
+            </a>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__links">
+              <li><a href="">Каталог услуг</a></li>
+              <li><a href="">О нас</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Статьи</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__contacts">
+              <!-- footer__contacts__item -->
+              <li class="footer__contacts__item">
+                <div class="footer__contacts__item__label">Адрес:</div>
+                <div class="footer__contacts__item__title">
+                  109377, г. Москва <br />
+                  ул. Новокузьминская 1-я д. 19
+                </div>
+              </li>
+              <!--END footer__contacts__item -->
+              <!-- footer__contacts__item -->
+              <li class="footer__contacts__item">
+                <div class="footer__contacts__item__label">E-mail:</div>
+                <div class="footer__contacts__item__title">
+                  stroimaster-kbu@mail.ru
+                </div>
+              </li>
+              <!--END footer__contacts__item -->
+            </ul>
+          </div>
+          <div class="footer__col">
+            <a href="" class="footer__phone">+7 (495) 786-0017</a>
+            <button class="btn head__btn" data-modal-show="1">
+              Заказать обратный звонок
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================================END footer================================== -->
+    <!-- ===================================footer_2================================== -->
+    <div class="footer__2">
+      <div class="container">
+        <div class="footer__2__content">
+          <div class="footer__2__copyright">© 2020 ООО “ СтройМастер”</div>
+          <a href="">Политика конфиденциальности</a>
+          <a href="">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+    <!-- ===================================END footer_2================================== -->
+    <!-- ===================================modals================================== -->
+    <div class="modal__wrapper" data-modal="1">
+      <div class="modal">
+        <div class="modal__close" data-modal-close="1">
+          <img src="img/modal__close.svg" alt="" />
+        </div>
+        <div class="modal__title">Заказать звонок</div>
+        <form action="" class="hero__form">
+          <div class="inputgroup">
+            <input
+              name="phoneinput"
+              type="text"
+              placeholder="+7 (999) 999-9999"
+            />
+          </div>
+          <div class="inputgroup">
+            <button class="btn">Заказать звонок</button>
+          </div>
+        </form>
+        <div class="hero__text__politics">
+          Нажимая «Вызвать мастера», я соглашаюсь с условиями
+          <a href="">Политики конфиденциальности</a>
+        </div>
+      </div>
+    </div>
 
-	{% endblock %}
-	<!-- ===================================footer================================== -->
-	<div class="footer">
-		<div class="container">
-			<div class="footer__cols">
-				<div class="footer__col">
-					<a href="" class="footer__logo">
-						<img src="img/logo__white.svg" alt="">
-					</a>
-				</div>
-				<div class="footer__col">
-					<ul class="footer__links">
-						<li><a href="">Каталог услуг</a></li>
-						<li><a href="">О нас</a></li>
-						<li><a href="">Новости</a></li>
-						<li><a href="">Статьи</a></li>
-						<li><a href="">Контакты</a></li>
-					</ul>
-				</div>
-				<div class="footer__col">
-					<ul class="footer__contacts">
-						<!-- footer__contacts__item -->
-						<li class="footer__contacts__item">
-							<div class="footer__contacts__item__label">Адрес:</div>
-							<div class="footer__contacts__item__title">109377, г. Москва <br> ул. Новокузьминская 1-я д. 19</div>
-						</li>
-						<!--END footer__contacts__item -->
-						<!-- footer__contacts__item -->
-						<li class="footer__contacts__item">
-							<div class="footer__contacts__item__label">E-mail:</div>
-							<div class="footer__contacts__item__title">stroimaster-kbu@mail.ru</div>
-						</li>
-						<!--END footer__contacts__item -->
-					</ul>
-				</div>
-				<div class="footer__col">
-					<a href="" class="footer__phone">+7 (495) 786-0017</a>
-					<button class="btn head__btn">Заказать обратный звонок</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- ===================================END footer================================== -->
-	<!-- ===================================footer_2================================== -->
-	<div class="footer__2">
-		<div class="container">
-			<div class="footer__2__content">
-				<div class="footer__2__copyright">© 2020 ООО “ СтройМастер”</div>
-				<a href="">Политика конфиденциальности</a>
-				<a href="">Пользовательское соглашение</a>
-			</div>
-			
-		</div>
-	</div>
-	<!-- ===================================END footer_2================================== -->
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/headhesive/1.2.4/headhesive.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
+    <div class="modal__wrapper" data-modal="2">
+      <div class="modal">
+        <div class="modal__close" data-modal-close="2">
+          <img src="img/modal__close.svg" alt="" />
+        </div>
+        <div class="modal__title">Вызвать мастера</div>
+        <form action="" class="hero__form">
+          <div class="inputgroup">
+            <input
+              name="phoneinput"
+              type="text"
+              placeholder="+7 (999) 999-9999"
+            />
+          </div>
+          <div class="inputgroup">
+            <button class="btn">Вызвать мастера</button>
+          </div>
+        </form>
+        <div class="hero__text__politics">
+          Нажимая «Вызвать мастера», я соглашаюсь с условиями
+          <a href="">Политики конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+    <!-- ===================================END modals================================== -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headhesive/1.2.4/headhesive.min.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
