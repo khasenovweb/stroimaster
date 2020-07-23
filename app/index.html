@@ -46,9 +46,6 @@
                 </a>
                 <ul class="navbar__links">
                     <li>
-                        <a href="/stroimaster/">Главная</a>
-                    </li>
-                    <li>
                         <a href="uslugi.html">Каталог услуг</a>
                     </li>
                     <li>
@@ -57,9 +54,9 @@
                     <li>
                         <a href="news.html">Новости</a>
                     </li>
-                    <!-- <li>
-              <a href="">Статьи</a>
-            </li> -->
+                    <li>
+                        <a href="vakancies.html">Вакансии</a>
+                    </li>
                     <li>
                         <a href="contacts.html">Контакты</a>
                     </li>
@@ -102,7 +99,10 @@
                         <div class="preims__item">
                             <div class="preims__item__head">
                                 <div class="preims__item__icon" style="background-image: url(img/preim-1.svg);"></div>
-                                <div class="preims__item__title">Работаем с юр. и физ. лицами</div>
+                                <div class="preims__item__text">
+                                    <div class="preims__item__title">Работаем с юр. и физ. лицами</div>
+                                    <div class="preims__item__desc"> Работы для юридических и физических лиц проводятся по безналичному расчету </div>
+                                </div>
                             </div>
                         </div>
                         <!--END preims__item -->
@@ -110,7 +110,10 @@
                         <div class="preims__item">
                             <div class="preims__item__head">
                                 <div class="preims__item__icon" style="background-image: url(img/preim-2.svg);"></div>
-                                <div class="preims__item__title">Гарантия на работу до 3-х лет</div>
+                                <div class="preims__item__text">
+                                    <div class="preims__item__title">Гарантия на работу до 3-х лет</div>
+                                    <div class="preims__item__desc"> Бесплатное гарантийное обслуживание в случае поломки </div>
+                                </div>
                             </div>
                         </div>
                         <!--END preims__item -->
@@ -118,7 +121,43 @@
                         <div class="preims__item">
                             <div class="preims__item__head">
                                 <div class="preims__item__icon" style="background-image: url(img/preim-3.svg);"></div>
-                                <div class="preims__item__title">Приедем в удобное для вас время</div>
+                                <div class="preims__item__text">
+                                    <div class="preims__item__title">Приедем в удобное для вас время</div>
+                                    <div class="preims__item__desc"> Работаем без праздников и выходных </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END preims__item -->
+                        <!-- preims__item -->
+                        <div class="preims__item">
+                            <div class="preims__item__head">
+                                <div class="preims__item__icon" style="background-image: url(img/preim-4.svg);"></div>
+                                <div class="preims__item__text">
+                                    <div class="preims__item__title"> Качественное выполнение всех работ </div>
+                                    <div class="preims__item__desc"> Все клиенты остались довольны нашей работой </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END preims__item -->
+                        <!-- preims__item -->
+                        <div class="preims__item">
+                            <div class="preims__item__head">
+                                <div class="preims__item__icon" style="background-image: url(img/preim-5.svg);"></div>
+                                <div class="preims__item__text">
+                                    <div class="preims__item__title"> Низкая стоимость услуг </div>
+                                    <div class="preims__item__desc"> Цена, доступная каждому </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END preims__item -->
+                        <!-- preims__item -->
+                        <div class="preims__item">
+                            <div class="preims__item__head">
+                                <div class="preims__item__icon" style="background-image: url(img/preim-6.svg);"></div>
+                                <div class="preims__item__text">
+                                    <div class="preims__item__title"> Доступность </div>
+                                    <div class="preims__item__desc"> Менеджер оперативно обработает вашу заявку </div>
+                                </div>
                             </div>
                         </div>
                         <!--END preims__item -->
@@ -326,6 +365,12 @@
                             <div class="footer__contacts__item__title"> stroimaster-kbu@mail.ru </div>
                         </li>
                         <!--END footer__contacts__item -->
+                        <!-- footer__contacts__item -->
+                        <li class="footer__contacts__item">
+                            <div class="footer__contacts__item__label">ИНН/ОГРН:</div>
+                            <div class="footer__contacts__item__title"> 9721098422/1207700171007 </div>
+                        </li>
+                        <!--END footer__contacts__item -->
                     </ul>
                 </div>
                 <div class="footer__col">
@@ -382,6 +427,44 @@
             </form>
             <div class="hero__text__politics"> Нажимая «Вызвать мастера», я соглашаюсь с условиями <a href="">Политики конфиденциальности</a>
             </div>
+        </div>
+    </div>
+    <div class="modal__wrapper" data-modal="3">
+        <div class="modal">
+            <div class="modal__close" data-modal-close="3">
+                <img src="img/modal__close.svg" alt="" />
+            </div>
+            <div class="modal__title">Стать партнером</div>
+            <form action="" class="modal__success__form">
+                <input type="text" placeholder="ФИО">
+                <input type="text" placeholder="Образование">
+                <input type="text" placeholder="Специальность">
+                <input type="text" placeholder="Город проживания">
+                <label class="modal__success__form__label" for="">Наличие собственного автотранспорта</label>
+                <label class="radio" for="radio1">
+                    <input type="radio" id="radio1" name="auto">
+                    <span class="radio__box"></span>
+                    <div class="radio__label">Есть</div>
+                </label>
+                <label class="radio" for="radio2">
+                    <input type="radio" id="radio2" name="auto">
+                    <span class="radio__box"></span>
+                    <div class="radio__label">Нет</div>
+                </label>
+                <input name="phoneinput" type="text" placeholder="+7 (999) 999-9999" />
+                <button class="btn">Вызвать мастера</button>
+            </form>
+            <div class="hero__text__politics"> Нажимая «Вызвать мастера», я соглашаюсь с условиями <a href="">Политики конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal__wrapper" data-modal="4">
+        <div class="modal">
+            <div class="modal__close" data-modal-close="4">
+                <img src="img/modal__close.svg" alt="" />
+            </div>
+            <div class="modal__title">Ваша заявка отправлена</div>
+            <div class="modal__desc">Наш администратор свяжется с вами в ближайшее время!</div>
         </div>
     </div>
     <!-- ===================================END modals================================== -->
