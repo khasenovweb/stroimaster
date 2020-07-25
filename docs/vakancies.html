@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
     <title>Строймастер</title>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 
 <body>
@@ -64,6 +66,9 @@
                 <a href="search.html" class="navbar__search">
                     <img src="img/search.svg" alt="" />
                 </a>
+                <div class="navbar__shamburger" data-modal-show="5">
+                    <img src="img/hamburger.svg" alt="">
+                </div>
             </div>
         </div>
         <!-- ==========================END navbar================================ -->
@@ -257,7 +262,7 @@
         <div class="container">
             <div class="footer__2__content">
                 <div class="footer__2__copyright">© 2020 ООО “ СтройМастер”</div>
-                <a href="">Политика конфиденциальности</a>
+                <a class="footer__2__politics" href="">Политика конфиденциальности</a>
                 <a href="">Пользовательское соглашение</a>
             </div>
         </div>
@@ -338,7 +343,42 @@
             <div class="modal__desc">Наш администратор свяжется с вами в ближайшее время!</div>
         </div>
     </div>
+    <div class="modal__wrapper " data-modal="5">
+        <div class="modal mobile__nav__modal">
+            <div class="modal__close" data-modal-close="5">
+                <img src="img/modal__close.svg" alt="" />
+            </div>
+            <div class="modal__title mobile__nav__title">Меню</div>
+            <!-- <div class="modal__desc">Наш администратор свяжется с вами в ближайшее время!</div> -->
+            <ul class="mobile__nav">
+                <li>
+                    <a href="uslugi.html">Каталог услуг</a>
+                </li>
+                <li>
+                    <a href="about__as.html">О нас</a>
+                </li>
+                <li>
+                    <a href="news.html">Новости</a>
+                </li>
+                <li>
+                    <a href="vakancies.html">Вакансии</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- ===================================END modals================================== -->
+    <!-- =================================== callbutton ================================== -->
+    <div class="callbuttons">
+        <a href="tel:+79514518479" class="callbutton">
+            <span class="callbutton__icon"></span>
+            <span class="callbutton__title">Позвонить</span>
+        </a>
+        <button class="callbutton__btn" data-modal-show="1">Заказать звонок</button>
+    </div>
+    <!-- ===================================END callbutton================================== -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>

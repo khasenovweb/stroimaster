@@ -1,0 +1,20 @@
+@media screen and (max-width: 1250px) {
+  .navbar__links li a {
+    padding: 35px 15px;
+  }
+  .hero__text {
+    padding: 40px;
+  }
+  .sec {
+    padding: 40px;
+  }
+  .contacts__content__text {
+    padding: 40px;
+  }
+  .hero {
+    grid-template-columns: 60% 40%;
+  }
+  .contacts {
+    grid-template-columns: 60% 40%;
+  }
+}

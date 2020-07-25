@@ -544,6 +544,7 @@ input {
 }
 .price__content {
   margin-top: 50px;
+  overflow-x: auto;
 }
 .news__detail__date {
   margin-top: 15px;
@@ -753,4 +754,76 @@ input {
 .modal__desc {
   margin-top: 15px;
   text-align: center;
+}
+.mobile__nav {
+  margin-top: 30px;
+  width: 100%;
+}
+.mobile__nav a {
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+}
+.navbar__shamburger {
+  display: none;
+}
+.mobile__nav__title {
+  width: 100%;
+  text-align: left;
+}
+.mobile__nav__phone {
+  width: 100%;
+  text-align: left;
+  color: #3d3d3d;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 30px;
+}
+.mobile__nav__btn {
+  float: left;
+}
+.mobile__nav__modal {
+  background-color: #3d3d3d;
+}
+.mobile__nav__modal * {
+  color: white;
+}
+.callbuttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  display: none;
+}
+.callbutton {
+  background-color: #ff5004;
+  color: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  padding: 15px;
+  padding-right: 30px;
+}
+.callbutton * {
+  color: white;
+}
+.callbutton .callbutton__icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-right: 10px;
+  background-image: url(../img/phonebuttonicon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.callbutton__btn {
+  background-color: #2e61ad;
+  color: white;
+  border: none;
 }

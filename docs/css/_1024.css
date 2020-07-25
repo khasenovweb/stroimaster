@@ -1,0 +1,69 @@
+@media screen and (max-width: 1204px) {
+  .head {
+    display: none;
+  }
+  .navbar__shamburger {
+    display: block;
+  }
+  .navbar__links {
+    display: none;
+  }
+  .navbar__search {
+    display: none;
+  }
+  .hero {
+    grid-template-columns: 100%;
+  }
+  .hero__img {
+    height: 250px;
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+  }
+  .hero__text {
+    -webkit-box-ordinal-group: 3;
+            order: 2;
+  }
+  .preims__items {
+    grid-template-columns: 1fr 1fr;
+  }
+  .services__items {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contacts {
+    grid-template-columns: 100%;
+  }
+  .contacts__content__map {
+    height: 250px;
+  }
+  .footer__cols {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .footer__col {
+    margin-top: 30px;
+  }
+  .footer__links a {
+    text-align: center;
+  }
+  .footer__links li {
+    text-align: center;
+    margin-right: 0;
+  }
+  .footer__contacts__item__label {
+    text-align: center;
+  }
+  .footer__contacts__item__title {
+    text-align: center;
+  }
+  .footer__2__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .footer__2__politics {
+    margin: 15px 0;
+  }
+}
