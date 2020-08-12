@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width" />
     <title>Строймастер</title>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -67,7 +67,7 @@
                     <img src="img/search.svg" alt="" />
                 </a>
                 <div class="navbar__shamburger" data-modal-show="5">
-                    <img src="img/hamburger.svg" alt="">
+                    <img src="img/hamburger.svg" alt="" />
                 </div>
             </div>
         </div>
@@ -281,7 +281,7 @@
                 <img src="img/modal__close.svg" alt="" />
             </div>
             <div class="modal__title">Заказать звонок</div>
-            <form action="" class="hero__form">
+            <form data-validate action="" class="hero__form">
                 <div class="inputgroup">
                     <input name="phoneinput" type="text" placeholder="+7 (999) 999-9999" />
                 </div>
@@ -298,13 +298,13 @@
             <div class="modal__close" data-modal-close="2">
                 <img src="img/modal__close.svg" alt="" />
             </div>
-            <div class="modal__title">Вызвать мастера</div>
-            <form action="" class="hero__form">
+            <div class="modal__title">Расчитать стоимость</div>
+            <form data-validate action="" class="hero__form">
                 <div class="inputgroup">
                     <input name="phoneinput" type="text" placeholder="+7 (999) 999-9999" />
                 </div>
                 <div class="inputgroup">
-                    <button class="btn">Вызвать мастера</button>
+                    <button class="btn">Заказать звонок</button>
                 </div>
             </form>
             <div class="hero__text__politics"> Нажимая «Вызвать мастера», я соглашаюсь с условиями <a href="">Политики конфиденциальности</a>
@@ -317,23 +317,24 @@
                 <img src="img/modal__close.svg" alt="" />
             </div>
             <div class="modal__title">Стать партнером</div>
-            <form action="" class="modal__success__form">
-                <input type="text" placeholder="ФИО">
-                <input type="text" placeholder="Образование">
-                <input type="text" placeholder="Специальность">
-                <input type="text" placeholder="Город проживания">
+            <form data-validate action="" class="modal__success__form">
+                <input type="text" placeholder="ФИО" />
+                <input type="text" placeholder="Образование" />
+                <input type="text" placeholder="Специальность" />
+                <input type="text" placeholder="Город проживания" />
                 <label class="modal__success__form__label" for="">Наличие собственного автотранспорта</label>
                 <label class="radio" for="radio1">
-                    <input type="radio" id="radio1" name="auto">
+                    <input type="radio" id="radio1" name="auto" />
                     <span class="radio__box"></span>
                     <div class="radio__label">Есть</div>
                 </label>
                 <label class="radio" for="radio2">
-                    <input type="radio" id="radio2" name="auto">
+                    <input type="radio" id="radio2" name="auto" />
                     <span class="radio__box"></span>
                     <div class="radio__label">Нет</div>
                 </label>
                 <input name="phoneinput" type="text" placeholder="+7 (999) 999-9999" />
+                <textarea name="" id="" cols="30" rows="10" placeholder="Опишите свою проблему"></textarea>
                 <button class="btn">Вызвать мастера</button>
             </form>
             <div class="hero__text__politics"> Нажимая «Вызвать мастера», я соглашаюсь с условиями <a href="">Политики конфиденциальности</a>
@@ -346,10 +347,10 @@
                 <img src="img/modal__close.svg" alt="" />
             </div>
             <div class="modal__title">Ваша заявка отправлена</div>
-            <div class="modal__desc">Наш администратор свяжется с вами в ближайшее время!</div>
+            <div class="modal__desc"> Наш администратор свяжется с вами в ближайшее время! </div>
         </div>
     </div>
-    <div class="modal__wrapper " data-modal="5">
+    <div class="modal__wrapper" data-modal="5">
         <div class="modal mobile__nav__modal">
             <div class="modal__close" data-modal-close="5">
                 <img src="img/modal__close.svg" alt="" />
@@ -382,7 +383,7 @@
             <span class="callbutton__icon"></span>
             <span class="callbutton__title">Позвонить</span>
         </a>
-        <button class="callbutton__btn" data-modal-show="1">Заказать звонок</button>
+        <button class="callbutton__btn" data-modal-show="1"> Заказать звонок </button>
     </div>
     <!-- ===================================END callbutton================================== -->
     <script src="js/jquery.js"></script>

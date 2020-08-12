@@ -91,6 +91,9 @@
   .callbuttons {
     display: grid;
   }
+  body {
+    padding-bottom: 60px;
+  }
   .search__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -232,5 +235,8 @@
   }
   .services__item__text {
     padding: 15px 0;
+  }
+  .hero__list__item__title {
+    font-size: 20px;
   }
 }

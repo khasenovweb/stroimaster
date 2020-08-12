@@ -12,11 +12,11 @@
   outline: none;
   list-style-type: none;
   font-weight: 500;
-  color: @black;
   box-sizing: border-box;
 }
 body {
   background-color: @gray;
+  color: @black;
 }
 a {
   color: @blue;
@@ -73,6 +73,11 @@ a {
   }
 }
 input {
+  padding: 1.3em 2em;
+  border: none;
+  background-color: lighten(black, 95%);
+}
+textarea {
   padding: 1.3em 2em;
   border: none;
   background-color: lighten(black, 95%);
@@ -230,10 +235,11 @@ input {
 .hero__form {
   margin-top: 30px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   .btn {
     //border-radius: 0 100px 100px 0px;
     //border-radius: 0;
+    width: 200px;
   }
   input {
     //border-radius: 100px 0 0 100px;
@@ -288,6 +294,16 @@ input {
   grid-gap: 30px;
   margin-top: 50px;
 }
+.services__item {
+  display: flex;
+  flex-direction: column;
+}
+.services__item__text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .services__item__img {
   height: 200px;
   width: 100%;
@@ -301,16 +317,17 @@ input {
   font-size: 24px;
   display: block;
   color: @black;
+  margin-bottom: 15px;
 }
 .services__item__title {
   //margin-top: 15px;
 }
 .services__item__price {
+  margin-top: auto;
   color: @orange;
   padding: 10px 15px;
   background-color: lighten(@orange, 45%);
   display: inline-block;
-  margin-top: 15px;
   font-weight: 700;
   font-size: 18px;
 }
@@ -354,7 +371,7 @@ input {
 
 .contacts__form {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 40px;
 }
 .navbar__logo {
@@ -764,6 +781,9 @@ input {
   button {
     width: 100%;
   }
+  label.error {
+    margin-top: 0;
+  }
 }
 
 .radio {
@@ -810,8 +830,8 @@ input {
   }
 }
 .navbar__shamburger {
-    display: none;
-  }
+  display: none;
+}
 
 .mobile__nav__title {
   width: 100%;
@@ -836,7 +856,6 @@ input {
 }
 
 .callbuttons {
-
   position: fixed;
   bottom: 0;
   left: 0;
@@ -846,9 +865,8 @@ input {
   display: none;
 }
 .callbutton {
-  
   background-color: @orange;
-  
+
   color: white;
   display: flex;
   align-items: center;
@@ -869,11 +887,64 @@ input {
     background-position: center;
     background-size: contain;
   }
-
 }
 
 .callbutton__btn {
-    background-color: @blue;
-    color: white;
-    border: none;
+  background-color: @blue;
+  color: white;
+  border: none;
+}
+
+.inputgroup {
+  display: flex;
+  flex-direction: column;
+}
+
+label.error {
+  margin-top: 10px;
+  font-size: 13px;
+  color: white;
+  background-color: @orange;
+  padding: 5px 10px;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: @orange;
+    position: absolute;
+    left: 12px;
+    top: -5px;
+    transform: rotate(45deg);
   }
+}
+input.error {
+  color: @orange;
+}
+
+.hero__list__item__icon {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../img/check.svg);
+  margin-right: 10px;
+}
+
+.hero__list__item {
+  display: flex;
+  align-items: center;
+}
+.hero__list {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
+  grid-gap: 10px;
+}
+.hero__list__item__title {
+  font-size: 26px;
+  font-weight: 700;
+}
