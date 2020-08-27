@@ -571,6 +571,14 @@ textarea {
 }
 .price__content {
   margin-top: 50px;
+}
+.wrap_dfe {
+  bottom: 70px !important;
+}
+.content__editor strong {
+  font-weight: 700;
+}
+.table__wrapper {
   overflow-x: auto;
 }
 .news__detail__date {
